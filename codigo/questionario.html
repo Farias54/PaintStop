@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra do produto</title>
+    <style>
+        body{
+            background-color: rgb(45, 43, 49);
+            color: #fffff9;
+            font: normal 15pt arial,verdana,serif;
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .dados_pessoais{
+            background-color: rgb(45, 43, 49);
+            border: solid orangered 5px;
+            border-radius: 5px;
+            align-items: left;
+            align-content: left;
+            width: 60%;
+            transform: translateX(30%);
+        }
+        fieldset{
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dados_pessoais">
+        <form>
+        <fieldset>
+        <p style="font: normal 25pt arial;border: solid orangered 2px;">Dados pessoais</p><br>
+        Nome Completo:<br>
+        <input type="text" required><br><br>
+        Sexo:<br>
+        <input type="radio" name="sexo" value="Fem" id="F"> 
+        <label for="F">F</label>
+        <input type="radio" name="sexo" value="Mas" id="M">
+        <label for="M">M</label><br><br>
+        Idade:<br>
+        <input type="number" required><br><br>
+        Email de contato:<br>
+        <input type="email" required><br><br>
+        Numero de telefone:<br>
+        <input type="tel" required><br><br><br>
+        </fieldset>
+        <fieldset>
+        <p style="font: normal 25pt arial;border: solid orangered 2px;">Endereço</p><br>
+        Estado:<br>
+        <input type="text" required><br><br>
+        Cidade:<br>
+        <input type="text" required><br><br>
+        Bairro:<br>
+        <input type="text" required><br><br>
+        Rua:<br>
+        <input type="text" required><br><br>
+        Número:<br>
+        <input type="number" required><br><br>
+        </fieldset>
+        <fieldset>
+        <p style="font: normal 25pt arial;border: solid orangered 2px;">Orçamento</p><br>
+        Produto:<br>
+        <input type="text" required><br><br>
+        Quantia:<br>
+        <input type="number" required><br><br>
+        Forma de pagamento:<br>
+        <select>
+            <option value="c-credito">Cartão de Crédito</option>
+            <option value="c-debito">Cartão de Débito</option>
+            <option value="Boleto">Boleto Bancário</option>
+        </select><br><br>
+        CPF:<br>
+        <input type="text" required><br><br>
+        </fieldset>
+        Obtém cupom de desconto?:<br>
+        <select name="desc">
+            <option value="none">Não obtenho cupons</option>
+            <option value="40">40% de Desconto</option>
+            <option value="20">20% de Desconto</option>
+            <option value="5">5% de Desconto</option>
+        </select><br><br>
+    <button type="submit"><a href="https://teste-reusetech.000webhostapp.com/prova5.php">Concluido</a></button>
+    </form>
+    </div>
+</body>
+</html>
